@@ -1,0 +1,17 @@
+name                describe                                                             attack   defense   life   xp_drop   gold_drop   speed
+Bat             A_bat_cave._Be_careful,_they_often|attack_in_pairs.                         6        25      45      50       25          100
+Rat             A_simple_sewer_rat._You_can_crush_him_easily.                               3        30      35      40       10           60
+Wasp            Its_powerful_venom_can_kill_an_Orc_in|less_than_5_minutes.                  8        30      40      60       28           90
+Spider          A_poisonous_spider._Do_not_be_fooled_by_his_web!                            9        40      45      65       37           70
+Scorpion        The_King's_Desert._The_most_resistant|of_all_monsters_but_the_slowest.      5        100     100     95       35           20
+Shark           A_sea_monster._He_is_slow_but_really_resistant.                             6        90      90      100      45           30
+Eye_Monster     An_abomination_straight_out_of_hell.|Don't_look_his_eyes.                   8        50      50      70       35           50
+JellyFish       A_creature_from_the_underwater_depths.|Take_care_to_his_electric_defenses.  5        50      50      50       50           40
+Farmer          A_simple_farmer._Really_weak.                                               3        30      35      40       10           60
+Elf             Elves_are_a_long-lived_humanoid_race,|more_slender_and_agile_than_humans.   6        25      45      50       25          100
+Paladin         The_paladin_protect_villagers.                                              8        50      50      70       35           50
+DragonSlayer    This_men_have_killed_many_dragons...|Someone_said_that_he_fought_a_Nazgul.  5        100     100     95       60           20
+Guard           Simple_guard_of_the_city,_they_protect|the_door_of_the_city.                9        40      45      65       30           70
+King's_Guard    The_most_powerful_guard_of_the_city,|they_protect_the_king.                 6        90      90      100      45           30
+City's_Guard    They_protect_the_city!                                                      5        50      50      50       39           40
+Soldier         Basic_Soldier_of_Middle_Earth                                               3        30      35      40       10           60
