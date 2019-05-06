@@ -34,7 +34,7 @@ CSFML [Download](https://www.sfml-dev.org/download/csfml/index-fr.php)
 
 * **Théo CERUTTI** - [Github](https://github.com/theocerutti)
 * **Antoine MAILLARD** - [Github](https://github.com/AntoineMaillard06)
-* **Mathilde COUSTON**
+* **Mathilde COUSTON** - [Github](https://github.com/Mathilde2512)
 * **Michael FABRIE**
 
 ## View
