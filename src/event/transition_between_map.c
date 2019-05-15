@@ -42,7 +42,6 @@ int change_next_map(data_t *d)
     if ((d->cur == LVL_1_C && d->boss.boss < 1) ||
     (d->cur == LVL_2_C && d->boss.boss < 2)) {
         d->next_map = 1;
-        d->trans = 1;
         return (1);
     }
     d->pre_cur = d->cur;

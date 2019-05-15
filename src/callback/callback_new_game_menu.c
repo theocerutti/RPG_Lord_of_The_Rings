@@ -18,6 +18,7 @@ void return_previous_scene(data_t *d)
 void reinit_new_game(data_t *d)
 {
     button_respawn(d);
+    d->boss.boss = 0;
     d->hero.stat = (stat_t){0, 0, 0, 1, 1, 1, 10, 10, 100, 100, 100, 100, 0,
     100, 0, 0, 0};
     d->can_continue_game = TRUE;

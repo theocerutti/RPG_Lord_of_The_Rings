@@ -16,6 +16,7 @@ void button_left_arrow_i(data_t *d)
 
 void button_back(data_t *d)
 {
-    d->pre_cur = d->cur;
+    if (d->pre_cur < LVL_1_F && d->pre_cur > LVL_3_C)
+        d->pre_cur = d->cur;
     d->cur = MENU;
 }

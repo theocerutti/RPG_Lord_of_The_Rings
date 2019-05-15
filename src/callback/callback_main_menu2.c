@@ -30,24 +30,17 @@ void button_resume(data_t *data)
 
 void re_init_bosses(data_t *d)
 {
-    if (d->boss.boss < 1) {
-        d->boss.boss_ch[0].obj.pos.x = 6410;
-        d->boss.boss_ch[0].obj.pos.y = -3088;
-        sfSprite_setPosition(d->boss.boss_ch[0].obj.s,
-        d->boss.boss_ch[0].obj.pos);
-    }
-    if (d->boss.boss < 2) {
-        d->boss.boss_ch[1].obj.pos.x = 8100;
-        d->boss.boss_ch[1].obj.pos.y = -390;
-        sfSprite_setPosition(d->boss.boss_ch[1].obj.s,
-        d->boss.boss_ch[1].obj.pos);
-    }
-    if (d->boss.boss < 3) {
-        d->boss.boss_ch[2].obj.pos.x = 6950;
-        d->boss.boss_ch[2].obj.pos.y = 20;
-        sfSprite_setPosition(d->boss.boss_ch[2].obj.s,
-        d->boss.boss_ch[2].obj.pos);
-    }
+    int save = d->boss.boss;
+
+    d->boss = get_bosses_data();
+    if (d->cur != NEW_GAME)
+        d->boss.boss = save;
+    if (d->boss.boss < 1)
+        push(&d->scenes[LVL_1_C].list_ch, d->boss.boss_ch[0]);
+    if (d->boss.boss < 2)
+        push(&d->scenes[LVL_2_C].list_ch, d->boss.boss_ch[1]);
+    if (d->boss.boss < 3)
+        push(&d->scenes[LVL_3_C].list_ch, d->boss.boss_ch[2]);
 }
 
 void re_init_last_lvl(data_t *d)
@@ -69,10 +62,15 @@ void re_init_last_lvl(data_t *d)
 
 void button_respawn(data_t *d)
 {
+    if (d->cur == NEW_GAME)
+        d->pre_cur = LVL_3_C;
     if (d->pre_cur >= LVL_1_F && d->pre_cur <= LVL_3_C)
         re_init_last_lvl(d);
+    if (d->cur == NEW_GAME)
+        d->pre_cur = NEW_GAME;
+    else
+        d->pre_cur = DIE;
     d->cur = LVL_1_F;
-    d->pre_cur = DIE;
     d->scenes[LVL_1_F].objs[0].pos.x = -5700;
     d->scenes[LVL_1_F].objs[0].pos.y = -4000;
     d->scenes[LVL_1_F].on_map.pos.x = -5700;

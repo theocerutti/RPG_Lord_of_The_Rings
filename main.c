@@ -56,6 +56,7 @@ int main(void)
 
     init_all_data(&data);
     setup_game(&data);
+    data.hero.stat.life = 100;
     while (sfRenderWindow_isOpen(data.window.w)) {
         if (data.trans >= 10)
             poll_event(&data, &event);

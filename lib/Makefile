@@ -11,7 +11,7 @@ RM 			=	@rm -f
 
 CFLAGS		= 	-Wall -Wextra -W
 
-all: compil clean
+all: compil
 
 compil:
 	make -C my

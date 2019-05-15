@@ -27,8 +27,8 @@ void init_button_new_game_menu(data_t *data)
     button_t b_choose_good_sauron = {NULL, {1170, 680}, {270, 100}, NULL,
     {0, 0, {0, 0}, sfBlack, 40}, &button_choose_good_sauron, {270, 100}, {0}};
 
-    init_button(&b_choose_bad_sauron, text_b, "Sauron", str_font);
-    init_button(&b_choose_good_sauron, text_b, "Good Sauron", str_font);
+    init_button(&b_choose_bad_sauron, text_b, "Lorgoth", str_font);
+    init_button(&b_choose_good_sauron, text_b, "Morwen", str_font);
     init_button(&b_class_menu_return, text_b, "MENU", str_font);
     data->scenes[NEW_GAME].buttons[0] = b_choose_bad_sauron;
     data->scenes[NEW_GAME].buttons[1] = b_choose_good_sauron;
