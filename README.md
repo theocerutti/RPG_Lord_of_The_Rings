@@ -1,5 +1,7 @@
 ## RPG Lord of The Rings  
 
+Trailer: https://youtu.be/c01y2P72roY  
+
 A RPG game based on LOTR universe. This game has been created in team of 4.  
 
 In this game you will find:  
@@ -35,7 +37,7 @@ CSFML [Download](https://www.sfml-dev.org/download/csfml/index-fr.php)
 * **Théo CERUTTI** - [Github](https://github.com/theocerutti)
 * **Antoine MAILLARD** - [Github](https://github.com/AntoineMaillard06)
 * **Mathilde COUSTON** - [Github](https://github.com/MathildeCouston)
-* **Michael FABRIE**
+* **Michael FABRIE** [Github](https://github.com/mic16/)
 
 ## View
 
